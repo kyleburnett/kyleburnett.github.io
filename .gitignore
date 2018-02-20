@@ -1,0 +1,9 @@
+# Ruby/Gem files
+.ruby-version
+Gemfile.lock
+
+# Mac files
+.DS_Store
+
+# Generated Site Data
+_site/

@@ -1,0 +1,21 @@
+title: Kyle Burnett
+url: "https://kyletburnett.github.io"
+
+# Author
+author:
+  name:         Kyle Burnett
+  url:          https://kyletburnett.com
+  email:        kyletburnett@gmail.com
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
