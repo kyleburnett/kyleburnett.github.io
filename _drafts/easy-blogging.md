@@ -80,3 +80,11 @@ $ bundle exec jekyll serve
 ```
 
 # Deployment
+
+This was the best part. Once I'd made some customizations to the theme, all I had to do was commit and push to master as usual.
+
+```
+git add --all && git commit -m "Initial site skeleton" && git push origin master
+```
+
+Overall I'm very pleased with how it all turned out, and I'm looking forward to writing some posts.
