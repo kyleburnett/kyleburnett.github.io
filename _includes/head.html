@@ -10,6 +10,17 @@
         {% endif %}
     </title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115052063-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115052063-1');
+    </script>
+
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,400i,700">
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
