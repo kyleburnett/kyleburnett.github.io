@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GitHub Pages + Jekyll"
-date:   2015-11-17 16:16:01 -0600
+date:   2018-03-17 14:20:00 -0400
 ---
 
 My goal at the start of 2018 was to blog more consistently. My old blog setup consisted of a WordPress site hosted by DigitalOcean. This amounted to $5 per month for the server plus $1 per month for backups, which isn't bad at all. DigitalOcean has a great user interface, and they really try to make system administration as easy as possible.
@@ -17,9 +17,9 @@ So I went looking for an alternative. My criteria for a blogging solution was si
 3. Little to No Maintenance.
 4. Easy to Customize.
 
-I eventually came to GitHub pages. I'm not entirely sure how I found it. It might have been a NodeJS library that was hosting their documentation on the site. Their introduction video on [https://pages.github.com/](https://pages.github.com/) really caught my eye. Especially the part where they talk about the excessiveness of the various blogging options out there. I was also drawn to the simplicity of [Jekyll](https://jekyllrb.com/), the static site generator. The listed [example sites](https://github.com/jekyll/jekyll/wiki/Sites) seemed wonderfully simple.
+I eventually came to GitHub pages. I'm not entirely sure how I found it. It might have been a NodeJS library that was hosting their documentation on the site. I really identified with their introduction video at [https://pages.github.com/](https://pages.github.com/) especially the part where they talk about the excessiveness of the various blogging options out there. I was also drawn to the simplicity of [Jekyll](https://jekyllrb.com/), the static site generator. The listed [example sites](https://github.com/jekyll/jekyll/wiki/Sites) seemed wonderfully simple, which is exactly what I was looking for.
 
-I want to spend a little time now explaining how I got set up and how my blog site works.
+I want to spend a little time now explaining how I got set up and how my blog site works. Note that at least some of these instructions will be specific to the Mac or other Linux based environments.
 
 # Initial Repository Setup
 
@@ -80,3 +80,13 @@ $ bundle exec jekyll serve
 ```
 
 # Deployment
+
+I won't go into detail about how to set up the Jekyll project itself. This is covered well in the [Jekyll documentation](https://jekyllrb.com/docs/home/) and the particulars can depend on the theme you use. I do want to talk about how I go from a draft to a published article because the simplicity of this process is what drew me to GitHub Pages + Jekyll in the first place.
+
+Drafts are important because they allow you to save progress on a post you're writing (by committing to source control) without affecting the content you're ready to publish. Drafts are stored in the `_drafts` directory, and you can serve your site with drafts mode turned on by using the `--drafts` switch.
+
+```
+$ bundle exec jekyll serve --drafts
+```
+
+When you're ready to publish the post, you'll want to move the draft into the `_posts` directory and name the file according to the rules laid out in the [Jekyll's "Writing posts" guide](https://jekyllrb.com/docs/posts/). I also like to set the date in the site's [front matter](https://jekyllrb.com/docs/frontmatter/). Once your changes have been committed or merged into the master branch on GitHub, your blog site will be updated with your new post!
