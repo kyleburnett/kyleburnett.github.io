@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="recipe">
+    <h1>{{ page.title }}</h1>
+
+    <div class="intro">
+        <div class="featured">
+            <img src="{{ page.recipe.featured_image }}" />
+        </div>
+        <div class="summary">
+
+            <div class="overview">
+                <span class="icon-group"><i class="fas fa-utensils"></i><span>{{ page.recipe.servings }}</span></span>
+                <span class="icon-group"><i class="far fa-clock"></i><span>{{ page.recipe.time }}</span></span>
+            </div>
+
+            {{ page.recipe.intro_markdown | markdownify }}
+        </div>
+    </div>
+
+    <div class="contents">
+
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            {{ page.recipe.ingredients_markdown | markdownify }}
+        </div>
+
+        <div class="directions">
+            <h2>Directions</h2>
+            {{ page.recipe.directions_markdown | markdownify }}
+        </div>
+
+    </div>
+</div>
