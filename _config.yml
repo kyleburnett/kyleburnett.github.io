@@ -12,6 +12,12 @@ sass:
   sass_dir:     _sass
   style:        compressed
 
+# Collections
+collections_dir: collections
+collections:
+  recipes:
+    output: true
+
 # Gems
 plugins:
   - jekyll-paginate

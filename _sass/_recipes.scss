@@ -1,0 +1,107 @@
+.recipe {
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+
+    .summary {
+      flex: 1 0 50%;
+
+      padding: 0 10px;
+
+      .overview {
+        display: flex;
+        flex-direction: column;
+
+        flex: 1 0 auto;
+
+        .icon-group {
+          padding: 8px 4px;
+          border-bottom: 1px solid $shadow-color;
+
+          &:first-child {
+            border-top: 1px solid $shadow-color;
+          }
+
+          span:not(:first-child) {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+
+    .featured {
+      flex: 0 0 50%;
+    }
+
+    @media (max-width: 1024px) {
+
+      .summary {
+        flex: 1 0 60%;
+      }
+
+      .featured {
+        flex: 1 1 40%;
+      }
+    }
+
+    @media (max-width: 812px) {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+
+      .summary,.featured {
+        flex: 0 0 100%;
+      }
+    }
+
+    @media print {
+
+      .summary {
+        flex: 1 0 70%;
+      }
+
+      .featured {
+        flex: 1 1 30%;
+      }
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: row;
+
+    .ingredients {
+      display: flex;
+      flex-direction: column;
+
+      flex: 1 0 30%;
+    }
+
+    .directions {
+      display: flex;
+      flex-direction: column;
+
+      flex: 1 1 auto;
+    }
+
+    @media (max-width: 1024px) {
+
+      .ingredients {
+        flex: 1 0 40%;
+      }
+
+      .directions {
+        flex: 1 1 60%;
+      }
+    }
+
+    @media (max-width: 812px), print {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+
+      .ingredients,.directions {
+        flex: 1 0 100%;
+      }
+    }
+  }
+}
