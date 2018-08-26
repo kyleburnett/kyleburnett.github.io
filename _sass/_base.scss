@@ -58,6 +58,11 @@ img {
   display: block;
   margin: 0 0 1rem;
   max-width: 100%;
+
+  &.thumbnail {
+    display: inline;
+    margin: none;
+  }
 }
 
 td {
