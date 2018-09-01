@@ -19,13 +19,18 @@
   p {
     margin: 0 0 1rem;
     text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   a:hover {
     text-decoration: underline;
+  }
+
+  .gallery {
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   img {
