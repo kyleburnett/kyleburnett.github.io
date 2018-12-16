@@ -33,4 +33,15 @@ layout: default
         </div>
 
     </div>
+
+    {% if page.recipe.gallery %}
+        <div class="gallery">
+            {% for image in page.recipe.gallery %}
+                <a href="{{ image.path }}" class="lightbox-image" title="{{ image.title }}">
+                    <img src="{{ image.thumbnail }}" alt="{{ image.alt }}" height="150px" width="150px" class="thumbnail">
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+
 </div>

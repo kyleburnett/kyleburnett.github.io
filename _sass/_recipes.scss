@@ -104,4 +104,22 @@
       }
     }
   }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 1rem;
+    padding-top: 2rem;
+    border-top: 0.2rem solid $shadow-color;
+
+    a {
+      margin-left: 5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
 }
