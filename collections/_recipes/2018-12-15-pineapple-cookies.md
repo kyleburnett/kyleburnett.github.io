@@ -31,7 +31,7 @@ recipe:
   directions_markdown: |-
     **Baking Cookies**
     1. Cream together the first 4 ingredients: brown sugar, granulated sugar, butter, and salt. Use a pastry blender or a large fork for best results.
-    2. Add the remaining dough ingredients, and mix well with a wooden spoon.
+    2. Add the remaining dough ingredients&mdash;add the flour one cup at a time to make mixing easier&mdash;and mix well with a wooden spoon.
     3. Drop by rounded teaspoonfuls on a cookie sheet lined with parchment paper.
     4. Bake at 350&deg;F for 12 minutes.
     5. Let the cookies cool on the baking sheet for 1-2 minutes, and then transfer to a cooling rack to cool completely before icing.
