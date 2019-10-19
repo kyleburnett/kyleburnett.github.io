@@ -1,6 +1,5 @@
 * {
   @include box-sizing;
-  line-height: 1.5;
 }
 
 html,
@@ -32,6 +31,10 @@ h6 {
   color: $default-shade;
   font-family: $sans-serif;
   line-height: normal;
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {
@@ -67,4 +70,18 @@ img {
 
 td {
   vertical-align: top;
+}
+
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 0 1rem;
+
+  th, td {
+    padding: .5rem 1rem;
+    border: 1px solid $grey-2;
+  }
 }
