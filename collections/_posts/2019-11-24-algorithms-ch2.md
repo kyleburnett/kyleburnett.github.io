@@ -27,7 +27,7 @@ Now, mathematical induction proofs have two parts: a base case and an induction 
 
 The base case for this problem is the case where \\\(n = 2\\\). \\\(T(n) = 2\\\) by the recurrence above. This is equivalent to \\\(T(2) = 2\lg{2} = 2\\\).
 
-The induction step requires us to first assume that the statement is true for \\\(n = 2^k\\\), \\\(T(2^k) = 2^k\lg{2^k} = k2^k\\\). Using this assumption, we must show that the statement is true for n = 2^{k+1}.
+The induction step requires us to first assume that the statement is true for \\\(n = 2^k\\\), \\\(T(2^k) = 2^k\lg{2^k} = k2^k\\\). Using this assumption, we must show that the statement is true for \\\(n = 2^{k+1}\\\).
 
 $$
 \begin{align*}
@@ -41,4 +41,4 @@ T(2^{k+1}) &= 2T(\frac{2^{k+1}}{2}) + 2^{k+1}\\
 \end{align*}
 $$
 
-The final step is to simply restate what we have proved. In this case, we have shown that the recurrence above is true for values of *n* where *n* is an exact power of 2.
+The final step is to simply restate what we have proved. In this case, we have shown that the recurrence above is true for values of \\\(n\\\) where \\\(n\\\) is an exact power of 2.
