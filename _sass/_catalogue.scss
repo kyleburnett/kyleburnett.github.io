@@ -37,6 +37,29 @@
     width: 2rem;
   }
 
+  &.cozy {
+    .catalogue-item {
+      display: block;
+      padding: 0.5rem 0;
+      border-bottom: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .catalogue-title {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 500;
+      margin: .25rem 0;
+    }
+
+    .catalogue-line {
+      border-top: .1rem solid $default-shade;
+    }
+  }
+
   &.compact {
     .catalogue-item {
       padding: 1rem 0;

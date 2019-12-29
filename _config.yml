@@ -17,6 +17,8 @@ collections_dir: collections
 collections:
   recipes:
     output: true
+  algorithms_cormen:
+    output: true
 
 # Gems
 plugins:

@@ -30,7 +30,7 @@ The first problem in the book is **Problem 1-1: Comparison of running times**. I
 
 > For each function *f(n)* and time *t* in the following table, determine the largest size *n* of a problem that can be solved in time *t*, assuming that the algorithm to solve the problem takes *f(n)* microseconds.
 
-Before I provide the table with my answers, it's important to note that it was simple enough to arrive at a mathematical expression for the final answer, especially when the exact number would be too big to fit into the table. However, for some cells, it was easier to derive the answer as an integer using a simple python script. You can find the python implementation of this derivation and my answers to the rest of the chapter exercises on my [red-mobile GitHub repository](https://github.com/kyleburnett/red-mobile).
+Before I provide the table with my answers, it's important to note that it was simple enough to arrive at a mathematical expression for the final answer, especially when the exact number would be too big to fit into the table. However, for some cells, it was easier to derive the answer as an integer using a simple python script. You can find the python implementation of this derivation and my answers to the rest of the chapter exercises [here]({% link _algorithms_cormen/ch01.md %}).
 
 <table>
     <thead>
