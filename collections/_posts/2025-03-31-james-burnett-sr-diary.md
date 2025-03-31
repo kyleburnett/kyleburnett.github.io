@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Diary of Private First Class, James Thomas Burnett, Sr."
-date:   2024-08-23 00:00:00 -0400
+date:   2025-03-31 00:00:00 -0400
 ---
 
 The following is a reproduction of the handwritten World War 2 diary of my grandfather, James Thomas Burnett, Sr. The diary runs from January 1942 through October 1942. I want to extend special thanks to my parents, James (JT) Burnett and Kelly Burnett, for digitizing this valuable piece of family history. Some entries contained indecipherable words. In places where the entry was difficult to read, my parents were able to provide an educated guess, typically denoted by a question mark. In cases where this was not possible, underscores were used to represent these unknown words.
