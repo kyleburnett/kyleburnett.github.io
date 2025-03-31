@@ -16,14 +16,14 @@ Use mathematical induction to show that when \\\(n\\\) is an exact power of 2, t
 
 $$
 T(n)=\begin{cases}
-2 & \text{ if } n=2 \\ 
+2 & \text{ if } n=2 \\
 2T(n/2) + n & \text{ if } n=2^{k}, \text{ for } k > 1
 \end{cases}
 $$
 
 is \\\(T(n) = n\lg{n}\\\).
 
-Now, mathematical induction proofs have two parts: a base case and an induction step. These steps were first explained to me with a comparison to "proving" that you can climb a ladder. The base case is like the first rung of the ladder. The base case is important just like the first rung of a ladder is important; if the first rung of a ladder is too high to reach or it can't hold the weight of the person climbing it, we can't go any further in our prove. The induction step works by saying, "Well, let's assume that I'm on rung k. Can I then prove them I can reach the k+1 rung?" Proving that I can advance a rung of the ladder coupled with the base case completes the proof. It's not a perfect analogy, but you'll hopefully see the similarities as we progress.
+Now, mathematical induction proofs have two parts: a base case and an induction step. These steps were first explained to me with a comparison to "proving" that you can climb a ladder. The base case is like the first rung of the ladder. The base case is important just like the first rung of a ladder is important; if the first rung of a ladder is too high to reach or it can't hold the weight of the person climbing it, we can't go any further in our proof. The induction step works by saying, "Well, let's assume that I'm on rung k. Can I then prove them I can reach the k+1 rung?" Proving that I can advance a rung of the ladder coupled with the base case completes the proof. It's not a perfect analogy, but you'll hopefully see the similarities as we progress.
 
 The base case for this problem is the case where \\\(n = 2\\\). \\\(T(n) = 2\\\) by the recurrence above. This is equivalent to \\\(T(2) = 2\lg{2} = 2\\\).
 
@@ -31,12 +31,12 @@ The induction step requires us to first assume that the statement is true for \\
 
 $$
 \begin{align*}
-T(2^{k+1}) &= 2T(\frac{2^{k+1}}{2}) + 2^{k+1}\\ 
- &= 2T(2^k) + 2^{k+1}\\ 
- &= 2[k(2^k)] + 2^{k+1}\\ 
- &= k(2^{k+1}) + 2^{k+1}\\ 
- &= 2^{k+1}(k+1)\\ 
- &= 2^{k+1}(\lg{2^{k+1}})\\ 
+T(2^{k+1}) &= 2T(\frac{2^{k+1}}{2}) + 2^{k+1}\\
+ &= 2T(2^k) + 2^{k+1}\\
+ &= 2[k(2^k)] + 2^{k+1}\\
+ &= k(2^{k+1}) + 2^{k+1}\\
+ &= 2^{k+1}(k+1)\\
+ &= 2^{k+1}(\lg{2^{k+1}})\\
  &= n\lg{n} \text{, where }n = 2^{k+1}
 \end{align*}
 $$
